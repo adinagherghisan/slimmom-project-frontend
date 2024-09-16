@@ -1,0 +1,159 @@
+/* .form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+} */
+
+.container,
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.inputField {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: var(--gray-Color);
+  padding-bottom: 8px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--stroke);
+  width: 100%;
+  padding-left: 10px;
+}
+.error {
+  font-family: var(--font-primary);
+  font-size: 10px;
+  color: red;
+  text-align: start;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.bloodTypeGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.bloodTypeGroup label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--gray-Color);
+  position: relative;
+  padding-left: 30px;
+}
+
+.bloodTypeGroup input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* cerc exterior */
+.bloodTypeGroup span::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--gray-Color);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: border-color 0.3s;
+}
+
+/* Cerc interior */
+.bloodTypeGroup span::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+}
+
+/* Schimbă culoarea marginii cercului interior atunci când butonul radio este bifat */
+.bloodTypeGroup input[type='radio']:checked + span::after {
+  background-color: var(--orange-Color);
+  color: var(----orange-Color);
+}
+
+.bloodTypeGroup input[type='radio']:checked + span {
+  color: var(--orange-Color);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.modalButton {
+  background-color: var(--orange-Color);
+  /* box-shadow: 0px 4px 10px var(--transparent_orange-Color); */
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--white-Color);
+  padding: 13px 25px 13px 25px;
+}
+
+.modalButton:hover {
+  box-shadow: 0px 4px 10px var(--transparent_orange-Color);
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .leftSide,
+  .rightSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .formGroup {
+    gap: 32px;
+  }
+  .button {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    gap: 32px;
+  }
+
+  .leftSide {
+    margin-right: 32px;
+  }
+  .button {
+    justify-content: flex-end;
+  }
+}

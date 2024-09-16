@@ -1,0 +1,66 @@
+/* Implicit (mobile first) */
+
+.menuButton {
+  display: block;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.menuButton img {
+  width: 30px;
+}
+.menuButton :focus {
+  color: var(--orange-Color);
+}
+.nav {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #264061;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.nav.open {
+  display: block;
+  position: fixed;
+  top: 100px;
+  left: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.link button {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gray-Color);
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 769px) {
+  .menuButton {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
+}

@@ -1,0 +1,37 @@
+.user {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: var(--title-primary_color);
+}
+.buttonExit {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: var(--gray-Color);
+  transition: color 0.3s;
+}
+.buttonExit::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 24px;
+  /* line-height: 17px; */
+  background-color: var(--gray-Color);
+  margin-right: 16px;
+}
+
+.buttonExit:hover {
+  color: var(--orange-Color);
+}

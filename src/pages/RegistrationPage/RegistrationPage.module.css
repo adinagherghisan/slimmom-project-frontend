@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 56px;
+  margin-left: 32px;
+}
+
+.container h1 {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--orange-Color);
+}
+
+@media (min-width: 768px) {
+  .container h1 {
+    text-align: start;
+  }
+  .container {
+    margin-top: 180px;
+  }
+}

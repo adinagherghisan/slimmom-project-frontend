@@ -1,0 +1,43 @@
+/* Main container styling */
+.mainPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 80px 20px 34px 20px;
+}
+
+.containerMainPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.title {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--title-primary_color);
+  margin-bottom: 68px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 34px;
+    line-height: 48px;
+    margin-bottom: 88px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainPage {
+    margin: 0;
+    height: calc(100vh - 114px);
+  }
+  .containerMainPage {
+    margin-left: 60px;
+  }
+}
