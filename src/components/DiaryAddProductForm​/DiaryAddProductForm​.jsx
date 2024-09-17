@@ -38,14 +38,7 @@ const DiaryAddProductForm = () => {
         }
     }, [debouncedSearchQuery, dispatch]);
 
-    // const handleAddProduct = (values, { resetForm }) => {
-    //     if (selectedProduct && values.productWeight) {
-    //         dispatch(fetchDiaryConsumed({ productId: selectedProduct._id, product_weight: values.productWeight }));
-    //         resetForm();
-    //         setSelectedProduct(null);
-    //         setSearchQuery("");
-    //     }
-    // };
+    
 
     const handleAddProduct = async (values, { resetForm }) => {
     if (selectedProduct && values.productWeight) {

@@ -58,7 +58,7 @@ const LoginForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className={`${css.btnLogIn} ${isLoginPage ? css.active : ''}`} 
+                className={`${css.btnLogIn} ${isLoginPage ? css.active : ''}`} // Apply active class if on login page
               >
                 {isSubmitting ? 'Log in...' : 'Log in'}
               </button>
@@ -66,7 +66,7 @@ const LoginForm = () => {
               <NavLink to="/registration">
                 <button
                   type="button"
-                  className={`${css.btnReg} ${!isLoginPage ? css.active : ''}`} 
+                  className={`${css.btnReg} ${!isLoginPage ? css.active : ''}`} // Apply active class if on register page
                 >
                   Register
                 </button>

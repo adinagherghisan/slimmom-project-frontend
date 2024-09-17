@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import css from './RegistrationForm.module.css';
-import { NavLink, useLocation } from 'react-router-dom'; 
+import { NavLink, useLocation } from 'react-router-dom'; // Import useLocation for checking the current path
 import { useDispatch } from 'react-redux';
 import { register } from '../../redux/auth/operations';
 

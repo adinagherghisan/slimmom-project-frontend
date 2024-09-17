@@ -10,6 +10,8 @@ export const useWindowSize = () => {
 
   const handleWindowSizeChange = () => {
     const newWidth = window.innerWidth;
+
+    
     if (
       (newWidth <= 767 && !windowSize.isMobile) ||
       (newWidth >= 768 && newWidth <= 1024 && !windowSize.isTablet) ||

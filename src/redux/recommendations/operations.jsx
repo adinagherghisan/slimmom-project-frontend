@@ -14,8 +14,7 @@ export const fetchPublicRecommendations = createAsyncThunk(
             }
             return response.data;
         } catch (error) {
-            // Sintaxa ?.(înlănțuire opțională) este utilizată pentru a accesa în siguranță proprietățile imbricate.
-            //  Dacă orice parte a lanțului(error.response, error.response.data, sau error.response.data.message) este undefinedsau null, va reveni undefined în loc să arunce o eroare.
+            
             if (error.response && error.response.status === 500) {
                 notificationMessage.error('Something went wrong!');
             };

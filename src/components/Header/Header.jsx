@@ -10,7 +10,6 @@ import UserInfo from "components/UserInfo/UserInfo";
 const Header = () => {
     const { isLoggedIn } = useAuth();
    
-
     return (
         <>
             <header className={css.header}>
