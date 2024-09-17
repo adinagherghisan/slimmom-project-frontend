@@ -2,7 +2,7 @@
   "name": "slim-mom",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://adinagherghisan.github.io/slimmom-project-frontend/",
+  "homepage": " https://adinagherghisan.github.io/slimmom-project-frontend/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "@testing-library/jest-dom": "^5.16.3",
